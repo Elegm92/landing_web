@@ -1,19 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Mi landing page</h1>
-    <h2>Lista de la compra</h2>
-    <ul>
-        <li>Leche</li>
-        <li>Huevos</li>
-        <li>Pan</li>
-    </ul>
-    <script src="./script.js"></script>
-</body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mundo Mascotas</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="./images/Logo.jpg" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#dogs">Mascotas</a></li>
+          <li><a href="#statistics">Estadísticas</a></li>
+          <li><a href="#formContacto">Contacto</a></li>
+          <li><a href="./pages/media.html">Galería</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="content" id="headline">
+        <h1>Bienvenido a Mundo Mascotas</h1>
+        <p>
+          Una página dedicada a mis perros y a la importancia de compartir la
+          vida con mascotas.
+        </p>
+      </section>
+      <section class="content">
+        <h2>Mis compañeros de vida</h2>
+        <p>
+          Comparto mi vida con dos compañeros muy especiales. El primero es Lío,
+          un dálmata de 14 años, tranquilo, noble y amante de la calma y las
+          siestas al sol. El otro es Reco, un American Staffordshire de 13 años,
+          más hiperactivo y juguetón, siempre lleno de energía y entusiasmo. A
+          pesar de sus personalidades tan diferentes, juntos forman el
+          equilibrio perfecto y son una parte fundamental de mi vida.
+        </p>
+        <figure id="fig_lio">
+          <img src="./images/Lio1.jpg" alt="Lío, el dálmata" />
+          <figcaption>Lío, el dálmata</figcaption>
+        </figure>
+        <figure id="fig_reco">
+          <img src="./images/Reco.jpg" alt="Reco, el American Staffordshire" />
+          <figcaption>Reco, el American Staffordshire</figcaption>
+        </figure>
+      </section>
+      <section id="dogs" class="content">
+        <h2>Mascotas en casa</h2>
+        <p>
+          Tener una mascota significa compartir la vida con un compañero fiel
+          que aporta amor, alegría y compañía. Las mascotas ayudan a reducir el
+          estrés, mejoran nuestro estado de ánimo y fomentan la responsabilidad
+          y la empatía. Más que animales, se convierten en parte de la familia y
+          dejan una huella muy especial en nuestra vida.
+        </p>
+      </section>
+      <section id="statistics" class="content">
+        <h2>Estadísticas de mascotas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Ciudad</th>
+              <th>Mascotas registradas</th>
+              <th>Habitantes</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Madrid</td>
+              <td>280.000</td>
+              <td>3.200.000</td>
+            </tr>
+
+            <tr>
+              <td>Barcelona</td>
+              <td>180.000</td>
+              <td>1.600.000</td>
+            </tr>
+
+            <tr>
+              <td>Valencia</td>
+              <td>95.000</td>
+              <td>800.000</td>
+            </tr>
+
+            <tr>
+              <td>Sevilla</td>
+              <td>70.000</td>
+              <td>700.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="formContacto" class="content">
+        <h2>Contacto</h2>
+        <form>
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            placeholder="Introduce tu nombre completo...."
+          />
+
+          <label for="favorite">¿Cuál es tu raza favorita?</label>
+          <select id="favorite" name="favorite" required>
+            <option value="">Selecciona una opción</option>
+            <option value="perro">Dálmata</option>
+            <option value="gato">Pastor Alemán</option>
+            <option value="pajaro">American Staffordshire</option>
+            <option value="pez">Chihuahua</option>
+            <option value="otro">Otro</option>
+          </select>
+
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Introduce tu email...."
+          />
+
+          <label for="message">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            placeholder="Introduce tu mensaje...."
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2026 Mundo Mascotas. Todos los derechos reservados.</p>
+        <p>Diseñado por Elena González</p>
+      </div>
+    </footer>
+  </body>
 </html>

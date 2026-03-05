@@ -1,4 +1,170 @@
+
+:root{
+  --cream: #f5efe6;      
+  --olive: #3a5a40;         
+  --black: #000000;       
+  --soft-beige: #E9D8C3;
+  --soft-blue: #6C63FF;
+  --blue: #2f5d8a;
+}
+
 body{
-    background-color: aquamarine;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+}
+
+main{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
+  padding: 10px;
+}
+
+
+#navbar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#navbar a{
+  text-decoration: none;
+  color: var(--soft-beige);
+  padding: 10px;
+}
+
+#navbar a:hover{
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.content{
+  background-color: var(--soft-beige);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+h1,h2{
+  text-align: center;
+}
+
+#fig_lio img,
+#fig_reco img{
+  width: 100%;
+  max-width: 400px;
+  display: block; /*bloque*/
+  margin: 10px auto;
+}
+figure figcaption{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,td{
+  border-bottom: 1px solid var(--black);
+  padding: 8px;
+  text-align: center;
+}
+
+#formContacto form{
+  display: flex;
+  flex-direction: column;
+}
+
+#formContacto input,
+#formContacto select,
+#formContacto textarea{
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+#formContacto button {
+  background-color: var(--soft-blue);
+  color: whitesmoke;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#formContacto button:hover {
+  background-color: var(--olive);
+}
+
+#intro_galery blockquote{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#gallery_images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gallery_images figure{
+  margin: 10px;
+  text-align: center;
+}
+
+#gallery_images img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+
+footer{
+  background-color: var(--blue);
+  color: var(--soft-beige);
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+@media (min-width:700px){
+
+
+  #gallery_images{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #fig_lio img,
+  #fig_reco img{
+    max-width: 300px;
+    max-height: 400px;
+  }
+   #fig_lio,
+  #fig_reco{
+    display: inline-block;
+    margin: 10px;
+  }
+
+  #formContacto form{
+    max-width: 500px;
+    margin: auto;
+  }
+
 }
