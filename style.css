@@ -1,12 +1,15 @@
+/* VARIABLES */
 
 :root{
-  --cream: #f5efe6;      
-  --olive: #3a5a40;         
-  --black: #000000;       
+  --cream: #f5efe6;
+  --olive: #3a5a40;
+  --black: #000000;
   --soft-beige: #E9D8C3;
   --soft-blue: #6C63FF;
   --blue: #2f5d8a;
 }
+
+/* BASE*/
 
 body{
   margin: 0;
@@ -27,6 +30,48 @@ header{
   padding: 10px;
 }
 
+footer{
+  background-color: var(--blue);
+  color: var(--soft-beige);
+  text-align: center;
+  padding: 10px;
+}
+
+h1,
+h2{
+  text-align: center;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td{
+  border-bottom: 1px solid var(--black);
+  padding: 8px;
+  text-align: center;
+}
+
+figure figcaption{
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* CLASES*/
+
+.content{
+  background-color: var(--soft-beige);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+/* IDS */
 
 #navbar ul{
   list-style: none;
@@ -47,40 +92,12 @@ header{
   border-radius: 5px;
 }
 
-.content{
-  background-color: var(--soft-beige);
-  margin: 10px;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-h1,h2{
-  text-align: center;
-}
-
 #fig_lio img,
 #fig_reco img{
   width: 100%;
   max-width: 400px;
-  display: block; /*bloque*/
+  display: block;
   margin: 10px auto;
-}
-figure figcaption{
-  text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th,td{
-  border-bottom: 1px solid var(--black);
-  padding: 8px;
-  text-align: center;
 }
 
 #formContacto form{
@@ -95,7 +112,7 @@ th,td{
   margin-bottom: 8px;
 }
 
-#formContacto button {
+#formContacto button{
   background-color: var(--soft-blue);
   color: whitesmoke;
   border: none;
@@ -104,7 +121,7 @@ th,td{
   transition: background-color 0.3s ease;
 }
 
-#formContacto button:hover {
+#formContacto button:hover{
   background-color: var(--olive);
 }
 
@@ -133,17 +150,9 @@ th,td{
 }
 
 
-footer{
-  background-color: var(--blue);
-  color: var(--soft-beige);
-  text-align: center;
-  padding: 10px;
-}
-
-
+/* MEDIA QUERIES */
 
 @media (min-width:700px){
-
 
   #gallery_images{
     flex-direction: row;
@@ -156,7 +165,8 @@ footer{
     max-width: 300px;
     max-height: 400px;
   }
-   #fig_lio,
+
+  #fig_lio,
   #fig_reco{
     display: inline-block;
     margin: 10px;
@@ -166,5 +176,4 @@ footer{
     max-width: 500px;
     margin: auto;
   }
-
 }
