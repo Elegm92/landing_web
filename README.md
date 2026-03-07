@@ -5,7 +5,7 @@ El proyecto está centrado en mostrar información sobre mis perros y las mascot
 
 ---
 
-## 📌 Descripción del proyecto
+## Descripción del proyecto
 
 La página está diseñada para presentar diferentes secciones relacionadas con las mascotas:
 
@@ -20,7 +20,7 @@ El objetivo del proyecto es practicar la creación de una página web estructura
 
 ---
 
-## 🛠 Tecnologías utilizadas
+## Tecnologías utilizadas
 
 Este proyecto utiliza las siguientes tecnologías:
 
@@ -65,7 +65,7 @@ landing_web/
 
 ---
 
-## 🖼 Capturas del proyecto
+## Capturas del proyecto
 
 
 ### Página principal
@@ -81,7 +81,7 @@ landing_web/
 
 ---
 
-## 📱 Diseño responsive
+## Diseño responsive
 
 La página está diseñada siguiendo el enfoque **mobile first**:
 
@@ -96,7 +96,7 @@ Esto permite que la web se visualice correctamente en:
 
 ---
 
-## 🚀 Cómo clonar el proyecto
+## Cómo clonar el proyecto
 
 Para descargar el proyecto en tu ordenador:
 
@@ -112,7 +112,7 @@ cd landin_web
 
 ---
 
-## ▶️ Cómo ejecutar el proyecto
+## Cómo ejecutar el proyecto
 
 1. Descarga o clona el repositorio.
 2. Abre el archivo **index.html** en tu navegador.
