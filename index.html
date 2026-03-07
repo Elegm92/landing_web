@@ -12,22 +12,22 @@
       <nav id="navbar">
         <ul>
           <li><a href="#">Inicio</a></li>
-          <li><a href="#dogs">Mascotas</a></li>
-          <li><a href="#statistics">Estadísticas</a></li>
-          <li><a href="#formContacto">Contacto</a></li>
+          <li><a href="#perros">Mascotas</a></li>
+          <li><a href="#estadistica">Estadísticas</a></li>
+          <li><a href="#form-contacto">Contacto</a></li>
           <li><a href="./pages/media.html">Galería</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="content" id="headline">
+      <section class="contenido">
         <h1>Bienvenido a Mundo Mascotas</h1>
         <p>
           Una página dedicada a mis perros y a la importancia de compartir la
           vida con mascotas.
         </p>
       </section>
-      <section class="content">
+      <section class="contenido">
         <h2>Mis compañeros de vida</h2>
         <p>
           Comparto mi vida con dos compañeros muy especiales. El primero es Lío,
@@ -37,16 +37,16 @@
           pesar de sus personalidades tan diferentes, juntos forman el
           equilibrio perfecto y son una parte fundamental de mi vida.
         </p>
-        <figure id="fig_lio">
+        <figure class="perros-dato">
           <img src="./assets/Lio1.jpg" alt="Lío, el dálmata" />
           <figcaption>Lío, el dálmata</figcaption>
         </figure>
-        <figure id="fig_reco">
+        <figure class="perros-dato">
           <img src="./assets/Reco.jpg" alt="Reco, el American Staffordshire" />
           <figcaption>Reco, el American Staffordshire</figcaption>
         </figure>
       </section>
-      <section id="dogs" class="content">
+      <section id="perros" class="contenido">
         <h2>Mascotas en casa</h2>
         <p>
           Tener una mascota significa compartir la vida con un compañero fiel
@@ -56,45 +56,44 @@
           dejan una huella muy especial en nuestra vida.
         </p>
       </section>
-      <section id="statistics" class="content">
+      <section id="estadistica" class="contenido">
         <h2>Estadísticas de mascotas</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Ciudad</th>
-              <th>Mascotas registradas</th>
-              <th>Habitantes</th>
-            </tr>
-          </thead>
 
-          <tbody>
-            <tr>
-              <td>Madrid</td>
-              <td>280.000</td>
-              <td>3.200.000</td>
-            </tr>
-
-            <tr>
-              <td>Barcelona</td>
-              <td>180.000</td>
-              <td>1.600.000</td>
-            </tr>
-
-            <tr>
-              <td>Valencia</td>
-              <td>95.000</td>
-              <td>800.000</td>
-            </tr>
-
-            <tr>
-              <td>Sevilla</td>
-              <td>70.000</td>
-              <td>700.000</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="tabla-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Ciudad</th>
+                <th>Mascotas registradas</th>
+                <th>Habitantes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Madrid</td>
+                <td>280.000</td>
+                <td>3.200.000</td>
+              </tr>
+              <tr>
+                <td>Barcelona</td>
+                <td>180.000</td>
+                <td>1.600.000</td>
+              </tr>
+              <tr>
+                <td>Valencia</td>
+                <td>95.000</td>
+                <td>800.000</td>
+              </tr>
+              <tr>
+                <td>Sevilla</td>
+                <td>70.000</td>
+                <td>700.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
-      <section id="formContacto" class="content">
+      <section id="form-contacto" class="contenido">
         <h2>Contacto</h2>
         <form>
           <label for="name">Nombre:</label>
@@ -137,7 +136,7 @@
       </section>
     </main>
     <footer>
-      <div class="footer-content">
+      <div class="footer-contenido">
         <p>&copy; 2026 Mundo Mascotas. Todos los derechos reservados.</p>
         <p>Diseñado por Elena González</p>
       </div>

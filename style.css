@@ -62,14 +62,49 @@ figure figcaption{
 
 /* CLASES*/
 
-.content{
+.contenido{
   background-color: var(--soft-beige);
   margin: 10px;
   padding: 10px;
   border-radius: 8px;
   text-align: center;
 }
+.perros-dato{
+  text-align: center;
+}
 
+.perros-dato img{
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 10px auto;
+}
+
+.galeria{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria figure{
+  margin: 10px;
+  text-align: center;
+}
+
+.galeria img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+}
+
+.tabla-responsive{
+  overflow-x: auto;
+}
+
+.tabla-responsive table{
+  width: 100%;
+  min-width: 500px;
+}
 
 /* IDS */
 
@@ -79,40 +114,37 @@ figure figcaption{
   margin: 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #navbar a{
   text-decoration: none;
   color: var(--soft-beige);
-  padding: 10px;
+  padding: 8px 10px;
+  display: inline-block;
+ 
 }
 
-#navbar a:hover{
+#navbar a:hover,
+#navbar a:active{
   background-color: var(--black);
   border-radius: 5px;
 }
 
-#fig_lio img,
-#fig_reco img{
-  width: 100%;
-  max-width: 400px;
-  display: block;
-  margin: 10px auto;
-}
-
-#formContacto form{
+#form-contacto form{
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-#formContacto input,
-#formContacto select,
-#formContacto textarea{
+#form-contacto input,
+#form-contacto select,
+#form-Contacto textarea{
   padding: 10px;
-  margin-bottom: 8px;
 }
 
-#formContacto button{
+#form-contacto button{
   background-color: var(--soft-blue);
   color: whitesmoke;
   border: none;
@@ -121,59 +153,40 @@ figure figcaption{
   transition: background-color 0.3s ease;
 }
 
-#formContacto button:hover{
+#form-contacto button:hover{
   background-color: var(--olive);
 }
 
-#intro_galery blockquote{
+#intro-galeria blockquote{
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
   font-size: 18px;
 }
 
-#gallery_images{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#gallery_images figure{
-  margin: 10px;
-  text-align: center;
-}
-
-#gallery_images img{
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-}
-
-
 /* MEDIA QUERIES */
 
 @media (min-width:700px){
 
-  #gallery_images{
+  .perros-dato{
+    display: inline-block;
+    margin: 10px;
+    vertical-align: top;
+  }
+
+  .perros-dato img{
+    width: 300px;
+    height: 300px;
+  }
+
+  .galeria{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  #fig_lio img,
-  #fig_reco img{
-    max-width: 300px;
-    max-height: 400px;
-  }
-
-  #fig_lio,
-  #fig_reco{
-    display: inline-block;
-    margin: 10px;
-  }
-
-  #formContacto form{
-    max-width: 500px;
+  #form-contacto form{
+    max-width: 600px;
     margin: auto;
   }
 }
