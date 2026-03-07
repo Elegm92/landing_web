@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galería</title>
     <link rel="stylesheet" href="../style.css" />
-    <link rel="icon" type="image/x-icon" href="../images/Logo.jpg" />
+    <link rel="icon" type="image/x-icon" href="../assets/Logo.jpg" />
   </head>
 
   <body>
     <header>
       <nav id="navbar">
         <ul>
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html">Inicio</a></li>
           <li><a href="#">Galería</a></li>
         </ul>
       </nav>
@@ -21,34 +21,55 @@
     <main>
       <section id="intro-galeria" class="contenido">
         <h2>Momentos especiales</h2>
-        <blockquote>
-          "Las mascotas no solo comparten nuestro hogar, también llenan nuestra
-          vida de compañía, alegría y momentos inolvidables. Cada paseo, cada
-          juego y cada mirada crea un vínculo especial que se convierte en parte
-          de nuestra historia."
-        </blockquote>
+        <p>
+          En esta galería comparto algunos momentos especiales con mis perros.
+          Cada imagen refleja su personalidad y el vínculo tan especial que
+          compartimos.
+        </p>
       </section>
 
-      <section class="galeria contenido">
-        <figure>
-          <img src="../assets/Reco.jpg" alt="Reco, el American Staffordshire" />
-          <figcaption>Reco, el American Staffordshire</figcaption>
-        </figure>
+      <section id="seccion-carrusel" class="contenido">
+        <h2>Galería de imágenes</h2>
 
-        <figure>
-          <img src="../assets/Lio2.jpg" alt="Lío jugando" />
-          <figcaption>Lío en plena siesta</figcaption>
-        </figure>
+        <div class="carrusel">
+          <figure class="foto-carrusel">
+            <img
+              src="../assets/Reco.jpg"
+              alt="Reco, el American Staffordshire"
+            />
+            <figcaption>Reco, el American Staffordshire</figcaption>
+          </figure>
 
-        <figure>
-          <img src="../assets/Lio3.jpg" alt="Paseo juntos"/>
-          <figcaption>Lío esperando la comida</figcaption>
-        </figure>
+          <figure class="foto-carrusel">
+            <img src="../assets/Lio2.jpg" alt="Lío en plena siesta" />
+            <figcaption>Lío en plena siesta</figcaption>
+          </figure>
 
-        <figure>
-          <img src="../assets/Reco2.jpg" alt="Momento divertido" />
-          <figcaption>Momento de relajación</figcaption>
-        </figure>
+          <figure class="foto-carrusel">
+            <img src="../assets/Lio3.jpg" alt="Lío esperando la comida" />
+            <figcaption>Lío esperando la comida</figcaption>
+          </figure>
+
+          <figure class="foto-carrusel">
+            <img src="../assets/Reco2.jpg" alt="Momento de relajación" />
+            <figcaption>Momento de relajación</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="seccion-video" class="contenido">
+        <h2>Vídeo</h2>
+        <p>Un pequeño vídeo de mascotas.</p>
+
+        <div class="video-galeria">
+          <iframe
+            src="https://www.youtube.com/embed/tPUjxWFuFz8"
+            title="Vídeo de mascotas"
+            frameborder="0"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
     </main>
 

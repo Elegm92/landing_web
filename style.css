@@ -15,6 +15,7 @@ body{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--cream);
+  line-height: 1.6;
 }
 
 main{
@@ -69,6 +70,10 @@ figure figcaption{
   border-radius: 8px;
   text-align: center;
 }
+.contenido p{
+  max-width: 700px;
+  margin: 10px auto;
+}
 .perros-dato{
   text-align: center;
 }
@@ -80,20 +85,54 @@ figure figcaption{
   margin: 10px auto;
 }
 
-.galeria{
+.carrusel{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  gap: 15px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 10px 0;
+  scrollbar-width: none;
 }
 
-.galeria figure{
-  margin: 10px;
+.foto-carrusel{
+  flex: 0 0 85%;
+  scroll-snap-align: center;
+  background-color: var(--cream);
+  border-radius: 8px;
+  padding: 10px;
   text-align: center;
 }
+.foto-carrusel:hover{
+  transform: scale(1.05);
+}
 
-.galeria img{
+.foto-carrusel img{
   width: 100%;
-  max-width: 300px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.foto-carrusel figcaption{
+  margin-top: 8px;
+  font-size: 15px;
+}
+.carrusel::-webkit-scrollbar{
+  display: none;
+}
+
+/* VIDEO */
+.video-galeria{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.video-galeria iframe{
+  width: 100%;
+  max-width: 600px;
+  height: 315px;
   border-radius: 8px;
 }
 
@@ -123,6 +162,7 @@ figure figcaption{
   color: var(--soft-beige);
   padding: 8px 10px;
   display: inline-block;
+  transition: background-color 0.2s ease;
  
 }
 
@@ -130,6 +170,15 @@ figure figcaption{
 #navbar a:active{
   background-color: var(--black);
   border-radius: 5px;
+}
+
+#intro-galeria{
+  text-align: center;
+}
+
+#intro-galeria p{
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 #form-contacto form{
@@ -178,11 +227,18 @@ figure figcaption{
     width: 300px;
     height: 300px;
   }
-
-  .galeria{
-    flex-direction: row;
-    flex-wrap: wrap;
+  .carrusel{
     justify-content: center;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  .foto-carrusel{
+    flex: 0 0 280px;
+  }
+
+  .foto-carrusel img{
+    height: 220px;
   }
 
   #form-contacto form{
