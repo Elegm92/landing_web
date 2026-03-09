@@ -35,7 +35,7 @@ Este proyecto utiliza las siguientes tecnologías:
 
 La estructura del proyecto es la siguiente:
 
-La estructura del proyecto es la siguiente:
+```
 landing_web/
 │
 ├── index.html
@@ -43,14 +43,16 @@ landing_web/
 ├── README.md
 │
 ├── assets/
-│ ├── Lio1.jpg
-│ ├── Lio2.jpg
-│ ├── Lio3.jpg
-│ ├── Reco.jpg
-│ └── Reco2.jpg
+│   ├── Lio1.jpg
+│   ├── Lio2.jpg
+│   ├── Lio3.jpg
+│   ├── Reco.jpg
+│   └── Reco2.jpg
 │
 └── pages/
-└── media.html
+    └── media.html
+```
+
 
 ## Características
 
