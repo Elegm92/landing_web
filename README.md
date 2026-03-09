@@ -115,8 +115,10 @@ cd landin_web
 ## Cómo ejecutar el proyecto
 
 1. Descarga o clona el repositorio.
-2. Abre el archivo **index.html** en tu navegador.
-3. Navega por las diferentes secciones de la página.
+2. Abre la pagina con (https://elegm92.github.io/landing_web/).
+3. Abre el archivo **index.html** en tu navegador.
+4. Navega por las diferentes secciones de la página.
+
 
 ---
 
