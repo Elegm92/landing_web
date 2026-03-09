@@ -70,7 +70,7 @@ landing_web/
 
 ### Página principal
 
-![Página principal](./assets/captura-galeria.png)
+![Página principal](./assets/captura-index.png)
 
 
 ### Galería
