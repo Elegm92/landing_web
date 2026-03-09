@@ -52,8 +52,6 @@ landing_web/
 └── pages/
 └── media.html
 
----
-
 ## Características
 
 - Diseño sencillo y limpio.
